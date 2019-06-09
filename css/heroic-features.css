@@ -3,6 +3,20 @@
  * Copyright 2013-2019 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-heroic-features/blob/master/LICENSE)
  */
+ *{
+  font-family: Microsoft JhengHei;
+ }
 body {
   padding-top: 56px;
+}
+#top{
+  background-color: darkcyan;
+}
+.title{
+ 
+  font-size: 30px;
+  text-align: center;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: #52BE80;
 }
