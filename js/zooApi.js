@@ -14,7 +14,7 @@ $(function () {
             data.forEach(e => {
                 addData(e);
             });
-            addObj(data);
+            //addObj(data);
             console.log(Location);
         },
         error: function (xhr, ajaxOptions, thrownError) {
@@ -28,12 +28,12 @@ $(function () {
         if (Location.find(item => item == e.A_Location)) {
         } else {
 
-            if (e.A_Location != "" && e.A_Location.indexOf(";") < 0) {
+            if (e.A_Location != "" && e.A_Location != null && e.A_Location.indexOf(";") < 0) {
                 //如果沒在陣列中就疊加進Location
                 Location.push(e.A_Location);
                 $("#Category").append('<li href="#" class="list-group-item" tab=' + count + '>' + e.A_Location + '</li>');
                 count += 1;
-            }
+           }
         }
     }
 
